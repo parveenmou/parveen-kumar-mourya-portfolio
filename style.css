@@ -441,4 +441,32 @@ footer {
     .nav-links {
         display: none; 
     }
+
+}
+/* Add this to the bottom of style.css */
+
+/* Remove underline and set color for links */
+a.info-item {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for clickable items */
+a.info-item:hover {
+    color: var(--accent); /* Changes text to Cyan */
+    transform: translateX(10px); /* Moves slightly right */
+    background: rgba(255, 255, 255, 0.05); /* Subtle background */
+    border-radius: 10px;
+}
+
+/* Specific color for WhatsApp icon on hover */
+a.info-item:hover .fa-whatsapp {
+    color: #25D366;
+}
+
+/* Specific color for LinkedIn icon on hover */
+a.info-item:hover .fa-linkedin-in {
+    color: #0077b5;
 }
